@@ -5,7 +5,7 @@ interface keyboard {
 }
 class WiredKeyboard implements keyboard {
     public void type() {
-        System.out.println("Typing with mechanical keyboard");
+        System.out.println("Typing with wired keyboard");
     }
 }
 
