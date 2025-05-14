@@ -53,3 +53,7 @@ public class Right {
         computer.use();
     }
 }
+
+// In this example, the Computer class depends on abstractions (Keyboard and Mouse interfaces) rather than concrete implementations.
+// This allows for flexibility and easier testing, as we can easily swap out different keyboard and mouse implementations without modifying the Computer class.
+// This adheres to the Dependency Inversion Principle, which states that high-level modules should not depend on low-level modules, but both should depend on abstractions.
