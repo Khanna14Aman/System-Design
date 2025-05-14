@@ -34,7 +34,7 @@ class Computer {
     private Keyboard keyboard;
     private Mouse mouse;
 
-    public Computer(Keyboard keyboard, Mouse mouse) {
+    public Computer(Keyboard keyboard, Mouse mouse) {  // Constructor Injection
         this.keyboard = keyboard;
         this.mouse = mouse;
     }
