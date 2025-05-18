@@ -1,0 +1,2 @@
+Strategy Design pattern we use when we have two or more child class inheriting same base class functionality but they are overriding the base class method and their overridden logic are same, then this is duplicacy and creates redundancy.
+This will create problem in scalling the functionality let say we need more classes with same functionality and all are writing same overridden code then this is a big problem.
