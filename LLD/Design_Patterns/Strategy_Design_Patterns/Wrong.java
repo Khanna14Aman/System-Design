@@ -38,6 +38,9 @@ public class Wrong {
         EngineType car2 = new RollsRoyce();
         car2.EngintType();
 
+        // Lamborghini and Ferrari have the same engine type
+        // but they are implemented in different classes. In future if we want to add new car with different engine type than Base class but same as Lamborghini and Ferrari
+        // then we have to create a new class and duplicate the code.
         EngineType car3 = new Lamborghini();
         car3.EngintType();
 
