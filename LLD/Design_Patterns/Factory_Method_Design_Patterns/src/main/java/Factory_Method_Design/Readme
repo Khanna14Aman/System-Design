@@ -1,0 +1,3 @@
+This Factory_Method Design Pattern is different from Factory or Simple Factory Design pattern.
+Because here you have interface of Factory because here you can have multiple factory of different type which will implementes the methods define in interface according to requirement.
+But in Factory or Simple Factory Design pattern we have concrete class for factory, we don't have interface so there if we required multiple factory then we need to create multiple concrete class.
