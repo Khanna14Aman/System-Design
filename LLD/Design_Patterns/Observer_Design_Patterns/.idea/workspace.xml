@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62fea0ae-963e-48f5-b72d-ce69b080b4d5" name="Changes" comment="" />
+    <list default="true" id="62fea0ae-963e-48f5-b72d-ce69b080b4d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Observable/Ipad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Observable/Iphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Observable/ObservableItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Observer/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Observer/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Observer/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UserPackage/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
