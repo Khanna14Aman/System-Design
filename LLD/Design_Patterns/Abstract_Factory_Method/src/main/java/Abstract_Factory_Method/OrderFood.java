@@ -17,5 +17,8 @@ public class OrderFood {
         GarlicBread wheatClassicGarlicBread = healthy.createGarlicBread("WheatClassicGarlicBread");
         wheatClassicGarlicBread.prepare();
 
+
+        // In Abstract Factory method Factory can create objects of different type like for different type of Burger and different type of Garlic Bread and many more.
+
     }
 }
