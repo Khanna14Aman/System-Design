@@ -5,6 +5,6 @@ public class CardPayment extends Payment {
         super(paymentMode,userName,totalCost);
     }
     public void paymentStatus() {
-        System.out.println("Dear " + this.userName + " your UPI payment of " + this.totalCost + " is successfully done through " + this.paymentMode);
+        System.out.println("Dear " + this.getUserName() + " your UPI payment of " + this.getTotalCost() + " is successfully done through " + this.getPaymentMode()+" with payment ID: "+this.getPaymentId());
     }
 }

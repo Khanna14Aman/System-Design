@@ -10,7 +10,7 @@ public class DeliveryOrder extends Order{
     }
     @Override
     public void orderDetails() {
-        System.out.println("Dear "+this.userName+ " your order number: "+this.getOrderID()+" is ready for "+this.getOrderType()+" at "+this.getAddress());
+        System.out.println("Dear "+this.getUserName()+ " your order number: "+this.getOrderID()+" is ready for "+this.getOrderType()+" at "+this.getAddress());
         System.out.println("Your order details are given below:");
         for(Restaurant restaurant: this.getItems().keySet()){
             System.out.println("Dishes from restaurant "+restaurant.getName());

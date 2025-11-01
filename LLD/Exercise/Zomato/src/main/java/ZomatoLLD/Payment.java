@@ -16,4 +16,20 @@ public abstract class Payment {
         this.totalCost = totalCost;
     }
     public abstract void paymentStatus();
+
+    public String getPaymentMode() {
+        return paymentMode;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public int getTotalCost() {
+        return totalCost;
+    }
+
+    public int getPaymentId() {
+        return paymentId;
+    }
 }
