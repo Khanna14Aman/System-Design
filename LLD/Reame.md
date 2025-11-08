@@ -1,0 +1,31 @@
+Inventions of different languages:
+1: Machine Language eg: 01001010 like this people were writing code.
+2: Assembly Language eg: People used to interact direct with hardware eg: MOV A, 61H means move value of register A to 61H 
+3: Then procedural language comes which is used to write code but OOPS were not supported. EG: C language where oops is not supported.
+4: OOPS supported language: Like Java, C++, Python, etc: help in solving Real World Problem, Data security, Scalable, Reusable, etc.
+5: Abstraction is used for data hiding but Encapsulation is used for data security.
+6: There are two types of UML diagram: Structural(Static) or Behaviroul(Dynamic) also the diagram name is UML Diagram and Sequence Diagram respectively.
+7: There are two types of association that is Class Association and Object Association.. Inheritance is a Class association. Object association is of three types Simple, Aggregation, and Composition.
+ 
+8: Robert C Martin published paper in 2000 regarding Design Principles.
+9: Immutable Class cannot be inherited and immutable method cannot be override.
+10: Principle of least knowledge should also be followed by our class: which means class should always talks to their immediate class only.
+11: Strategy Design Pattern: Define a family of algorithm, put them into separate class so that they can be changes at run time.
+Eg: 
+ 
+ 
+Here we have created separate interface for Talkable, Walkable and Flyable behaviour. From there we can create separate class and implement interface funtionality. Robot will have a "Has-A" relationship with all these interfaces.
+Note: Without Strategy Desing Pattern it was going like: 
+ 
+ 
+12: We should make a design like same code can be used every where so it will follow the concept of DRY : Do Not Repeat Yourself.
+13: Model class are those class which does not have any logic. It just has getter or setter function. 
+14: We should design the class in a way that it should follow first principle of least knowledge. Means Class should not depend on other object so much that it has to take most of the value from particular object. Means Class should be loosely coupled with object.
+15: Command Design Pattern: Encapsulate the request as an object, thereby letting you parameterize clients with different request, queue or log request and support undoable operations.
+16: Command Design Pattern helps client to give command and execute the command. Let's take example we usually switch on and switch off the lights or fan. Here we are giving command to switch to on and off the light or fan. So like this command design pattern also work. When we want to undo our work there also we can use command design pattern like we use ctrl+z in computer.
+17: Adapter design pattern we use if client is not able to interact with some other class or process. Here we have a middle class or interface, which work as adapter. Eg: Translator we use to translate different language because hindi person cannot understand chinese and chinese person cannot understand hindi. Eg: Java compiler can only compile java code but if we get C++ code then java compiler will not be able to execute so we can use some code conversion software as adapter. Eg: Compiler itself is a adapter because it helps working between High level language and low level language. Converts our code to machine level code and converts machine level error in human readable text.
+18: Façade Design Pattern we use when we don't want client to interact with complex system so here client will interact with one class and that class will interact with other complex systems. Eg: Whenever we want to use our computer we just interact with CPU or Laptop opening button now laptop and CPU will interact with other component and start the systems in such a way that we can use that.
+19: Composite Design Pattern which is also known as File design system: we use this design pattern whenever we want to use a system which have a tree like structure. Like file system where we can have file under folder and folder under folder as well.
+Or we can say when we want to interact with a system where system has a structure inside structure and we want to interact with them in sequential way .
+20: Template Design Pattern we use when we want our system to follow as specific path every time. Like If we are working on Image Processing and Neural Network then we have some specific order of calling the methods for these two work and for that we will define one template where order of calling the methods will be define.
+
