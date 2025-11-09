@@ -29,3 +29,12 @@ Note: Without Strategy Desing Pattern it was going like:
 Or we can say when we want to interact with a system where system has a structure inside structure and we want to interact with them in sequential way .
 20: Template Design Pattern we use when we want our system to follow as specific path every time. Like If we are working on Image Processing and Neural Network then we have some specific order of calling the methods for these two work and for that we will define one template where order of calling the methods will be define.
 
+21: Proxy Design Pattern: Here we have one object which is a replication of reciever to which client wants to interact, so instead of interacting directly reciever here client will be interacting with Proxy object but client is unaware of this. Because client is has a reference of interface or abstract class, and Proxy class and reciever class both have "IS-A" relationship with that interface or abstract class.
+
+There are three types of Proxy design Pattern:
+a: Virtual Proxy: This Proxy object protect the expensive resources of reciever. Eg Reciever is a class which load the image from cloud and display it to client, but here loading of cloud image is very expensive task so if client just make object of this class and doesn't call display method then this is a very expensive resource for reciever and doesn't gets used by client. So object of reciever gets created only when client wants to display image.
+
+b: Protection Proxy: This Proxy object protect the critical resources of reciever. So here proxy will first authenticate the client then only give access to reciever resources. As we did in File access method.
+
+c: Remote Proxy: This proxy object is usefull if client wants to connect through internet then proxy object will create a connection between client and reciever which is on internet.
+
