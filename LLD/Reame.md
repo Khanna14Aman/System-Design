@@ -38,3 +38,5 @@ b: Protection Proxy: This Proxy object protect the critical resources of recieve
 
 c: Remote Proxy: This proxy object is usefull if client wants to connect through internet then proxy object will create a connection between client and reciever which is on internet.
 
+
+22: Chain Of Responsibility: This design pattern we use when we task needs to be done by one class object but if that object is not able to complete the task it will assign that task to different class object and so on. Like this if one class object not able to fullfill that responsibility it will assign the task to different class object. Here all the classes will have "IS-A" relationship with one common abstract class or Interface. 
