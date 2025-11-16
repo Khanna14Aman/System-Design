@@ -40,3 +40,6 @@ c: Remote Proxy: This proxy object is usefull if client wants to connect through
 
 
 22: Chain Of Responsibility: This design pattern we use when we task needs to be done by one class object but if that object is not able to complete the task it will assign that task to different class object and so on. Like this if one class object not able to fullfill that responsibility it will assign the task to different class object. Here all the classes will have "IS-A" relationship with one common abstract class or Interface. 
+
+
+23: Bridge Design Pattern: It is same as Strategy Design Pattern but the intent of using this is different. Here we divide the main logic in two parts HLP(High Level Part) & LLP(Low Level Part) also known as Abstraction and Implementation respectively. Here HLP will just have the overview of logic but unaware about the internal processing that is taken care by LLP which is responsible for internal processing. Here Abstraction has a object of Implementation so it will prevent our code from class explosion.
