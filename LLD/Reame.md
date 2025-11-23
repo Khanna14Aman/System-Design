@@ -43,3 +43,19 @@ c: Remote Proxy: This proxy object is usefull if client wants to connect through
 
 
 23: Bridge Design Pattern: It is same as Strategy Design Pattern but the intent of using this is different. Here we divide the main logic in two parts HLP(High Level Part) & LLP(Low Level Part) also known as Abstraction and Implementation respectively. Here HLP will just have the overview of logic but unaware about the internal processing that is taken care by LLP which is responsible for internal processing. Here Abstraction has a object of Implementation so it will prevent our code from class explosion.
+
+
+24: Builder Design Pattern: This design pattern we use when we have multiple instace varialbe so there we will required to create multiple constructor with multiple combinations of instance variables.
+Also we cannot create setMethod of every variable because then user can change some critical information.
+Also one problem is if we want to excute the method only after all the mandatory fields values are set but customer can call method anytime. So we can write validation logic as well but how many places we will write validation logic.
+So for all the above problems we have Builder design pattern which will resolve this.
+
+
+25: Iterator Design Pattern: This design pattern we use to define iterator for different type of data structures like tree, linked list, or any custom data structures or list of objects as well.
+
+26: FlyWeight Design Pattern: This design pattern is usefull when we want to save a storage.
+Let say we have to represent lakhs of asteroids in game so we have to create lakhs of asteroids object that will take allot of storage.
+So using this design pattern we can save huge amount of storage.
+Lets we say all the asteroid will have some common properties like size, color, hight, width, weight. Also some properties will be unique for each asteroids like position on x axis and position on y axis. 
+We we can create two different class on is for "Intrinsic" properties which are same, and "Extrinsic" properties which will be unique for each. And "Extrinsic" object will have a "Has-A" relationship with "Intrinsic" properties.
+So let say we have 10 lakh unique postion for asteroid so we will have 10 lakh extrinsic object and we have 10 different combinations for "Intrinsic" objects so we will create only 10 "Intrinsic" object as compare to without flyweight design patten. This will save huge amout of storage.
