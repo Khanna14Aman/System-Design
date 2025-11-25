@@ -59,3 +59,7 @@ So using this design pattern we can save huge amount of storage.
 Lets we say all the asteroid will have some common properties like size, color, hight, width, weight. Also some properties will be unique for each asteroids like position on x axis and position on y axis. 
 We we can create two different class on is for "Intrinsic" properties which are same, and "Extrinsic" properties which will be unique for each. And "Extrinsic" object will have a "Has-A" relationship with "Intrinsic" properties.
 So let say we have 10 lakh unique postion for asteroid so we will have 10 lakh extrinsic object and we have 10 different combinations for "Intrinsic" objects so we will create only 10 "Intrinsic" object as compare to without flyweight design patten. This will save huge amout of storage.
+
+
+27: Mediator Design Pattern: We used this pattern when we need a communication between multiple objects. Then it is very usefull becasue if you maintain list of objects in every object then if new object gets created then every existing object has to update there object list. This is risky and breaking open/close principle as well.
+So here we have a mediator class (we can make singleton class as well) which will have the list of objects available. Now every object will communicate to mediator class and through that object can communicate with other objects. Here mediator class will take care of adding or removing the objects.
