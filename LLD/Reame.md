@@ -63,3 +63,6 @@ So let say we have 10 lakh unique postion for asteroid so we will have 10 lakh e
 
 27: Mediator Design Pattern: We used this pattern when we need a communication between multiple objects. Then it is very usefull becasue if you maintain list of objects in every object then if new object gets created then every existing object has to update there object list. This is risky and breaking open/close principle as well.
 So here we have a mediator class (we can make singleton class as well) which will have the list of objects available. Now every object will communicate to mediator class and through that object can communicate with other objects. Here mediator class will take care of adding or removing the objects.
+
+28: Prototype Design Pattern: This design pattern we use when we have to create multiple objects with negligible changes in objects and the object creation process using constructor is very expensive. So here we create one object and now we can create multiple object using copy constructor by copying the values of first object which we had created using very expensive tasks.
+Let say we have to connect to cloud data base for creating object which is very expensive so we will create only one object with this process and for rest of the object we will use copy constructor to copy values as objects are very similar and negligible difference between them.
