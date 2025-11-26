@@ -66,3 +66,7 @@ So here we have a mediator class (we can make singleton class as well) which wil
 
 28: Prototype Design Pattern: This design pattern we use when we have to create multiple objects with negligible changes in objects and the object creation process using constructor is very expensive. So here we create one object and now we can create multiple object using copy constructor by copying the values of first object which we had created using very expensive tasks.
 Let say we have to connect to cloud data base for creating object which is very expensive so we will create only one object with this process and for rest of the object we will use copy constructor to copy values as objects are very similar and negligible difference between them.
+
+29: Visitors Design Pattern: This design pattern we use when we know that in future we have a same number of objects or rarely we will create new object but for those object we will have to add new - new behaviour or methods so for every object every time we have to add new behaviour/ method and it can go multiple times. So this is breaking open-close principle and also it is breaking Single resposibility principle. Because then every time we have to update class with new methods and those method can different responsibilities.
+So here number of item class is fixed but number of behaviours of those class will getting increases. So we will create an interface which has a method visit for every item class which is fixed and we will create behaviour class every time when we have to introduce new behaviour.
+
