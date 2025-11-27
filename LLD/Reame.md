@@ -70,3 +70,9 @@ Let say we have to connect to cloud data base for creating object which is very 
 29: Visitors Design Pattern: This design pattern we use when we know that in future we have a same number of objects or rarely we will create new object but for those object we will have to add new - new behaviour or methods so for every object every time we have to add new behaviour/ method and it can go multiple times. So this is breaking open-close principle and also it is breaking Single resposibility principle. Because then every time we have to update class with new methods and those method can different responsibilities.
 So here number of item class is fixed but number of behaviours of those class will getting increases. So we will create an interface which has a method visit for every item class which is fixed and we will create behaviour class every time when we have to introduce new behaviour.
 
+30: Memento Design Pattern: This design pattern we use to keep snapshot or history of any object who is getting changed every time. This will help in storing history and we can rollback whenever we want.
+Eg: you are doing transaction you have 1000 rupee in bankaccount you with 500 so remaining amount is 500 in your backaccount. But if somehow ATM is not able to cash out so it is madatory to have history of your account so atm will get rollback and againg 1000 rupee will available in your system. If history were not available then it was not possible to get to know your original back balance.
+Here are three keywords :
+    a: Originator this points to actual object whose history you want to store.
+    b: Memento this takes snapshot/history of your original value as backup so it can be used in future.
+    c: CareTaker this has a list of memento so it is possible to go to any of the history.
