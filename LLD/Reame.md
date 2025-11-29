@@ -76,3 +76,46 @@ Here are three keywords :
     a: Originator this points to actual object whose history you want to store.
     b: Memento this takes snapshot/history of your original value as backup so it can be used in future.
     c: CareTaker this has a list of memento so it is possible to go to any of the history.
+
+
+
+31: Design Anti Patterns: These are the mistakes we did in our system by mistake:
+    a: God Object: When you have any class or object which have many responsibility then it is a god object. If it is just delegating the task to other object not performing any task it self then it is not a god object. But if it is performing task itself also then it is a god object
+
+    b: Spaghetti Code: When class design is very complex let say class A is dependent on B and B on C and C on D and D on A. Then there is not entry or exit point we can found, and these classes are tightly coupled as well. 
+    So these class are pron to error and tightly coupled.
+
+    c: Hard Codding thing: When we do hard codding of some variable. Eg: String st = "hello" this is hard codding but what if we want to change the value in future so prefer using const.
+
+    d: Gold Plating or Over Engineering: When we try to achieve perfect design in our system so some times we end up doing the things which never wanted. So we are just complicating our code nothing else. Eg. For every logic we shouldn't use strategy design pattern, we should only use if method is need to be change.
+
+    e: DRY(Do not repeat yourself): Some times we write same logic for multiple methods. What if in future we want to change the logic behing this then we have to change in every method so it is good to write same logic in single particular class and use from there. 
+    So in case we want to change the logic then only one place we have to change.
+
+    f: Constructor Overloading: Some times we create allot of constructor, so we should use Builder design pattern instead of overloading constructor many times.
+
+    g: Over use of getter/setter: Some times people create getter/setter for all the instance variable. But if some variable is private then this means that our intension was not to change that variable every time but if you create public getter/setter then what is the use of declaring private variable. So try and figure it out for which instance variable getter or setter is required.
+
+    h: Pre-mature Optimisation: Some times we try to optimise the system without figuring it out that our system is working as expected or not. So we should make our system as expected then optimise.
+
+    i: Overuse of Inheritance: We should not overuse of inheritance, instead of this try to use "has-a" relationship or composition relationship;
+
+
+32: Null Object Design Pattern: This design pattern is usefull when we are using any object to fetch instance variable or calling it's method. So for doing this we often write if condition to make sure that object is not null else it will give Null Object Exception.
+So instead of checking writing null condition it is better to use polymorphims and create a concrete class for null object so if object is null then this class will get called and in that, method definition will be empty.
+
+example: abstract class Fly{
+            fly();
+        }   
+        class FlyWithWings extends Fly{
+            fly(){
+                System.out.println("Flying with wings");
+            }
+        }
+        class NoFly extends Fly{
+            fly(){
+
+            }
+        }
+
+        Now here if we our object is not flying then it will come to NoFly class and call fly() method of this class and we will not get NullObjectException.
