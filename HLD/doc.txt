@@ -1,1 +1,16 @@
-just for hld
+1: Vertical scaling (also called scaling up) means increasing the capacity of a single server to handle more load.
+    a: Load Balancing not required because because we have only 1 server.
+    b: Single poing of failure.
+    c: It is fast because here it has inter process communication within the server only.
+    d: Data will be consistent because we have only 1 server so we can lock data base do changes so data will be consistent.
+    e: There is limitation in hardware because how much bigger server you can take number of CPU core has limitation, Ram Storage has limitation, ssd/hdd storage has limitations.
+    f: Maintaince is simple as we have only 1 server. 
+
+2: Horizontal scaling (also called scaling out) means increasing the capacity of your system by adding more servers, instead of upgrading a single one.
+    a: Load balancer is required as we have to select from which server we want to connect.
+    b: We have multiple system so it is resilient and will not have single point of failure as other systems can work as a backup
+    c: It is slow as compare to vertical scalling as there is a network calls between the servers for communication called (Remote Procedural Calls).
+    d: Data inconsistency can be a problem because if you are doing any atomic transaction then locking all the servers is not possible and data might get inconsistent while doing transactions.
+    e: There is no hardware limitation you can increase servers as required.
+    f: Maintaince is costly as multiple servers required maintainance.
+3: 
