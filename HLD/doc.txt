@@ -13,4 +13,10 @@
     d: Data inconsistency can be a problem because if you are doing any atomic transaction then locking all the servers is not possible and data might get inconsistent while doing transactions.
     e: There is no hardware limitation you can increase servers as required.
     f: Maintaince is costly as multiple servers required maintainance.
-3: 
+
+3: Webpage is a collection of data stored in html file in html format which can be represented using any browser.
+
+4: A server is a specialized computer or software system that provides resources, services, or data to other computers—called clients—over a network.
+    It receives requests from clients, processes them, and sends back the appropriate response. 
+
+5: An IP address (Internet Protocol address) is a unique numerical identifier assigned to every device connected to a network that uses the Internet Protocol. It works like a digital address that allows devices to locate, identify, and communicate with each other over the internet.

@@ -251,3 +251,6 @@ public class Main {
     }
 }
 
+28: Iterating PriorityQueue using for loop will not give value in order. Means for(Integer val: pq){
+    this will not give value in order.
+}
