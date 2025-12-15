@@ -20,3 +20,36 @@
     It receives requests from clients, processes them, and sends back the appropriate response. 
 
 5: An IP address (Internet Protocol address) is a unique numerical identifier assigned to every device connected to a network that uses the Internet Protocol. It works like a digital address that allows devices to locate, identify, and communicate with each other over the internet.
+
+6: Advantages of NoSQL over SQL: 
+    a: Insertion and Retrievals are less expensive as compare to SQL. Let say you have table student and columns address which has a separate table then while fetching data we have to use join b/w student and address table but in NoSql all data are stored in one place.
+    b: Any changes in schema can be done easly just start adding new field in NoSql.
+    c: Build for scaling 
+    d: Built for metrics/ analytics/ aggregation
+
+7: Disadvantages of NoSql over SQL:
+    a: Data consistency is problem. (ACID) properties are not supported.
+    b: Read time for particular column for slower than SQL.
+    | Aspect              | SQL (Relational Databases)                | NoSQL (Non-Relational Databases)   |
+| ------------------- | ----------------------------------------- | ---------------------------------- |
+| Data Model          | Tables with rows and columns              | Key-Value, Document, Column, Graph |
+| Schema              | Fixed, predefined schema                  | Schema-less or flexible schema     |
+| Query Language      | Standardized SQL                          | Database-specific APIs             |
+| Transactions        | Full **ACID** compliance                  | Mostly **BASE**, limited ACID      |
+| Consistency         | Strong consistency                        | Eventual consistency (mostly)      |
+| Joins               | Fully supported                           | Limited or not supported           |
+| Normalization       | Highly normalized                         | Denormalized                       |
+| Data Integrity      | Enforced via constraints (PK, FK, UNIQUE) | Mostly application-managed         |
+| Scalability         | Vertical scaling (mainly)                 | Horizontal scaling (native)        |
+| Complex Queries     | Excellent support                         | Weak support                       |
+| Data Redundancy     | Low                                       | High (due to denormalization)      |
+| Tooling & Ecosystem | Mature and standardized                   | Less mature, vendor-specific       |
+| Backup & Recovery   | Well-defined                              | Complex in distributed systems     |
+
+| Use Case            | Recommended DB |
+| ------------------- | -------------- |
+| Social media feeds  | NoSQL          |
+| Session management  | NoSQL          |
+| IoT data ingestion  | NoSQL          |
+| Real-time analytics | NoSQL          |
+| Caching (Redis)     | NoSQL          |
