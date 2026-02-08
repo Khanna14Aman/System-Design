@@ -254,3 +254,51 @@ public class Main {
 28: Iterating PriorityQueue using for loop will not give value in order. Means for(Integer val: pq){
     this will not give value in order.
 }
+
+
+29: private class Pair {
+        int index;
+        int last;
+
+        Pair(int index, int last) {
+            this.index = index;
+            this.last = last;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Pair pair = (Pair) o;
+            return index == pair.index && last == pair.last;
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(index, last);
+        }
+    }
+
+    If we don't override equals and hashCode method:
+    Pair p1 = new Pair(3, 2);
+    Pair p2 = new Pair(3, 2);
+    System.out.println(p1.equals(p2));   // false (Object.equals)
+
+    Even though the values are the same, Java compares memory addresses by default.
+
+    dp.put(new Pair(3,2), true);
+    dp.containsKey(new Pair(3,2));  // ❌ false
+
+    How HashMap Works Internally 🧠
+
+    Calls hashCode() → chooses bucket
+
+    Calls equals() → checks exact key match
+
+    If either is wrong:
+
+    Key is not found
+
+    Duplicate states stored
+
+    Performance degrades badly
