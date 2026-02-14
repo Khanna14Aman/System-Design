@@ -1,0 +1,1 @@
+![alt text](sql_vs_nosql.png)
