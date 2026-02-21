@@ -1,3 +1,4 @@
+Hello World
 1: We cannot make any class static but inner class can be static class:
 	Eg: Class A{
 		Int value;
