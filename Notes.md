@@ -93,6 +93,23 @@ interface MyInterface {
        Exception and Error: Error we cannot handle and program will get stops if it occurs but                            Exception we can handle if it occurs.
 14: There two types of Exceptions Checked and Unchecked, for Unchecked exception compiler will not ask us to handle but for checked type of exception compiler will ask us to handle
 
+| Type                    | Description                 |
+| ----------------------- | --------------------------- |
+| **Checked Exception**   | Checked at **compile-time** |
+| **Unchecked Exception** | Occurs at **runtime**       |
+
+Common Checked Exceptions:
+IOException
+SQLException
+FileNotFoundException
+
+
+Common Unchecked Exceptions:
+NullPointerException
+ArithmeticException
+ArrayIndexOutOfBoundsException
+
+
 14: Ducking Exceptions using throws: this we use when any method don't want to handle the exception it wants to throw the exception to the method from which it gets called and let that handle this exception.  EG: public void show(int a,int b) throws Exception{
 					}
 					Main(){
