@@ -47,9 +47,10 @@ public class Main {
     }
 }
 	
-7: By default all the methods in interface is public abstract. Also by default all the variables in interface is static and final.
-=> Reason of Static because we create object of class not interface and class implements the       interface not extends so we can implement only methods not variables.
-=> Reason of final because interface don't have it's memory in heap so, the class which implements the interface that will have memory in heap so how can we change interface variable values.
+7: By default all the methods in interface is public abstract. 
+Also by default all the variables in interface is static and final. Because interface is a common constants shared across the classes implementing this interface. So interface gets only 1 memory area and other classes used that common memory area and implement the different behaviour of this interface according to their self.
+a: Variables are static because we cannot create object of interface so how we will access that variable.
+b: Variables are final because all the classes are sharing common interface so it should not get changed by any class otherwise the changes will reflect in other class as well.
 
 8: Class can extends only 1 class or abstract class but it can implements multiple interface together.
 
