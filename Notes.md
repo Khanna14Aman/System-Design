@@ -1,5 +1,5 @@
 Hello World
-1: We cannot make any class static but inner class can be static class:
+1: We cannot make any class static but inner class can be static class: Because static means you can use instance variable or method without class object. But outer class is not a part as instance of any class. But inner class can be a instance of outer class so it can be static.
 	Eg: Class A{
 		Int value;
 		Static class B{
