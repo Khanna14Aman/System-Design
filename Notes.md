@@ -27,6 +27,25 @@ Hello World
 		};
 		Obj.show(); 
 	}
+
+	class Person {
+    void show() {
+        System.out.println("Person class");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person p = new Person() {
+            @Override
+            void show() {
+                System.out.println("Anonymous Person");
+            }
+        };
+
+        p.show();
+    }
+}
 	
 7: By default all the methods in interface is public abstract. Also by default all the variables in interface is static and final.
 => Reason of Static because we create object of class not interface and class implements the       interface not extends so we can implement only methods not variables.
