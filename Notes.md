@@ -340,3 +340,27 @@ public class Main {
     Duplicate states stored
 
     Performance degrades badly
+
+
+
+Comparator example:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        List<Integer> list = Arrays.asList(5, 2, 8, 1);
+
+        Collections.sort(list, new Comparator<Integer>() {
+            public int compare(Integer a, Integer b) {
+                return a - b;
+            }
+        });
+
+        System.out.println(list);
+    }
+}
+Negative  → Correct order (No Swap)
+Positive  → Wrong order  (Swap)
+Zero      → Equal  (No Swap)
