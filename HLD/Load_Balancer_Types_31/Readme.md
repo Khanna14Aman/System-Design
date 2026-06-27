@@ -6,6 +6,6 @@ These load balancers are categorized according to how they are set up and manage
 
 
 https://www.geeksforgeeks.org/system-design/types-of-load-balancer/ 
-
+https://www.geeksforgeeks.org/system-design/load-balancing-algorithms/
 
 Read from here.
