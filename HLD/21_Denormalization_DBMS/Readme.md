@@ -1,23 +1,32 @@
-Denormalization v/s Normalization
-Normalization and Denormalization both are the method which use in database but it works opposite to each other. One side normalization is used for reduce or removing the redundancy which means there will be no duplicate data or entries in the same table and also optimizes for data integrity and efficient storage
+# Denormalization in DBMS
 
-Denormalization is used for add the redundancy into normalized table so that enhance the functionality and minimize the running time of database queries (like joins operation ) and optimizes for performance and query simplicity. In a system that demands scalability, like that of any major tech company, we almost always use elements of both normalized and denormalized databases.
+## Denormalization vs Normalization
 
+Normalization and Denormalization are methods used in database design that work opposite to each other:
 
-Advantages:
-1: Improved Query Performance: Denormalization can improve query performance by reducing the number of joins required to retrieve data.
+- **Normalization** — reduces or removes redundancy; no duplicate data or entries in the same table. Optimizes for **data integrity and efficient storage**.
+- **Denormalization** — adds redundancy into normalized tables to enhance functionality and minimize query execution time (e.g., join operations). Optimizes for **performance and query simplicity**.
 
-2: Reduced Complexity: By combining related data into fewer tables, denormalization can simplify the database schema and make it easier to manage.
+> In a system that demands scalability (like any major tech company), we almost always use elements of **both** normalized and denormalized databases.
 
-3: Easier Maintenance and Updates: Denormalization can make it easier to update and maintain the database by reducing the number of tables.
+---
 
-4: Improved Read Performance: Denormalization can improve read performance by making it easier to access data.
+## Advantages of Denormalization
 
-5: Better Scalability: Denormalization can improve the scalability of a database system by reducing the number of tables and improving the overall performance.
+| Advantage | Description |
+|---|---|
+| **Improved Query Performance** | Reduces the number of joins required to retrieve data |
+| **Reduced Complexity** | Combining related data into fewer tables simplifies the database schema |
+| **Easier Maintenance and Updates** | Fewer tables makes updating and maintaining the database easier |
+| **Improved Read Performance** | Makes it easier to access data — fewer lookups needed |
+| **Better Scalability** | Reduces the number of tables and improves overall performance |
 
-Disadvantages:
-1: Reduced Data Integrity: By adding redundant data, denormalization can reduce data integrity and increase the risk of inconsistencies.
+---
 
-2: Increased Complexity: While denormalization can simplify the database schema in some cases, it can also increase complexity by introducing redundant data.
+## Disadvantages of Denormalization
 
-3: Increased Storage Requirements: By adding redundant data, denormalization can increase storage requirements and increase the cost of maintaining the database.
+| Disadvantage | Description |
+|---|---|
+| **Reduced Data Integrity** | Adding redundant data increases the risk of inconsistencies |
+| **Increased Complexity** | Redundant data can make the schema more complex in some cases |
+| **Increased Storage Requirements** | Redundant data increases storage needs and maintenance cost |

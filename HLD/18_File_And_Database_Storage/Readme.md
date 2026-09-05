@@ -1,34 +1,47 @@
-1:  File-based storage system in System Design:
+# File-Based Storage vs Database Storage
 
-On a computer or server, a file-based storage system keeps data as separate files. This straightforward approach is effective at storing both organized and unstructured data, such as logs, papers, and photos. But it doesn't have advanced functions of databases, including indexing and querying.
+## 1. File-Based Storage System
 
-Pros of File-based storage system:
+On a computer or server, a file-based storage system **keeps data as separate files**. This straightforward approach is effective at storing both organized and unstructured data such as logs, documents, and images. However, it lacks advanced database features like indexing and querying.
 
-a: Simplicity: Easy to implement and manage, requiring no complex setup.
-b: Compatibility: Works with many standard operating systems and tools.
-c: Cost-Effective: Suitable for small-scale storage needs without high expenses.
+### Pros
 
-Cons of File-based storage system:
+| Benefit | Description |
+|---|---|
+| **Simplicity** | Easy to implement and manage, requiring no complex setup |
+| **Compatibility** | Works with many standard operating systems and tools |
+| **Cost-Effective** | Suitable for small-scale storage needs without high expenses |
 
-a: Limited Scalability: Not ideal for large-scale systems or growing data needs.
-b: No Querying Support: Cannot perform advanced searches like databases.
-c: Data Integrity Issues: Managing duplicates or relationships between files can be challenging.
+### Cons
 
+| Limitation | Description |
+|---|---|
+| **Limited Scalability** | Not ideal for large-scale systems or growing data needs |
+| **No Querying Support** | Cannot perform advanced searches like databases |
+| **Data Integrity Issues** | Managing duplicates or relationships between files can be challenging |
 
-2:  Database Storage Systems in System Design
-A database storage system is a structured way to store, manage, and retrieve data efficiently. Unlike file-based systems, databases organize data into tables, rows, and columns, making it easier to query and maintain. These systems are commonly used in applications requiring data relationships, transactions, and large-scale processing.
+---
 
-Pros of Database Storage Systems:
+## 2. Database Storage Systems
 
-a: Efficient Querying: Allows advanced searches and operations using query languages like SQL.
-b: Data Integrity: Maintains consistency and relationships between data.
-c: Scalability: Handles growing data needs with options like sharding or replication.
+A database storage system is a **structured way to store, manage, and retrieve data efficiently**. Unlike file-based systems, databases organize data into tables, rows, and columns, making it easier to query and maintain. Commonly used in applications requiring data relationships, transactions, and large-scale processing.
 
-Cons of Database Storage Systems:
+### Pros
 
-a: Complex Setup: Requires proper design and configuration.
-b: Higher Cost: May involve licensing fees and infrastructure expenses.
-c: Performance Overhead: Can be slower for very simple data storage needs compared to file-based systems.
+| Benefit | Description |
+|---|---|
+| **Efficient Querying** | Allows advanced searches and operations using query languages like SQL |
+| **Data Integrity** | Maintains consistency and relationships between data |
+| **Scalability** | Handles growing data needs with options like sharding or replication |
 
+### Cons
 
-![alt text](image.png)
+| Limitation | Description |
+|---|---|
+| **Complex Setup** | Requires proper design and configuration |
+| **Higher Cost** | May involve licensing fees and infrastructure expenses |
+| **Performance Overhead** | Can be slower than file-based systems for very simple storage needs |
+
+---
+
+![File vs Database Storage](image.png)
