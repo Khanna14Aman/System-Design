@@ -38,6 +38,28 @@ CDN routing (DNS-based or anycast) → nearest edge PoP
            Future requests → HIT
 ```
 
+## Types of CDN
+| Type | How it works | Best for |
+|---|---|---|
+| **Pull CDN** | Edge fetches from origin on first cache miss, caches for subsequent requests | Most web apps — zero pre-warming, self-managing |
+| **Push CDN** | Content pre-distributed to all edges before any user requests it | Large static files (video, installers) where cold-start latency is unacceptable |
+| **Public CDN** | Shared third-party infrastructure (Cloudflare, Akamai, AWS CloudFront) | General-purpose delivery; cost-effective at any scale |
+| **Private CDN** | Dedicated infrastructure owned/operated by a single org | Large orgs needing full control, custom routing, or strict data residency |
+| **Hybrid CDN** | Mix of public and private; overflow or sensitive traffic routed accordingly | Enterprises balancing cost, control, and compliance |
+| **Peer-to-Peer CDN** | End-user devices share content with each other | Live streaming at massive scale (reduces origin + edge load) |
+
+## Benefits
+| Benefit | Detail |
+|---|---|
+| **Lower latency** | Content served from nearest PoP, not distant origin — round-trip drops from hundreds of ms to single digits |
+| **Reduced origin load** | Cache hits never reach origin — shields it from traffic spikes and reduces infrastructure cost |
+| **Higher availability** | Edge can serve cached content even if origin is temporarily down |
+| **Scalability** | Handles sudden traffic surges (product launches, viral events) without scaling origin |
+| **Bandwidth savings** | Compressing and caching at edge reduces bytes transferred from origin |
+| **DDoS mitigation** | Absorbs volumetric attacks at the edge before they reach origin |
+| **TLS / WAF at edge** | Offloads TLS termination and web application firewall from origin servers |
+| **Global reach** | Single origin serves users worldwide with consistent low latency |
+
 ## Trade-offs
 | Pro | Con |
 |---|---|
