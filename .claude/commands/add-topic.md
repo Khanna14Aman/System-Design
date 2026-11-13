@@ -56,6 +56,27 @@ Use `WebFetch` with the URL from Step 1. Ask it to:
 
 ---
 
+## Step 4b — Check for overlapping existing notes
+
+Before writing anything, scan the existing README files in the chosen parent folder to check whether the new topic overlaps significantly with content already covered.
+
+Use `Bash` to find and read existing notes:
+```bash
+find "C:\Users\I752737\System_Design\<chosen_parent>" -name "README.md" | xargs grep -l -i "<TopicName keywords>"
+```
+
+Or use `Glob` + `Read` to sample relevant existing files.
+
+**Rules:**
+- If a concept, section, or explanation is **already well-covered** in an existing note, **do not repeat it** in the new README. Instead, add a cross-reference line:
+  > `> See also: [<ExistingTopicName>](<relative_path>)`
+- If the new topic **is essentially the same** as an existing topic (same title, same scope), **stop** and tell the user:
+  > "This topic appears to already be covered in `<existing_folder>/README.md`. Do you still want to create a separate note, or would you prefer to update the existing one?"
+  Wait for user confirmation before continuing.
+- If the overlap is **partial** (e.g. new topic goes deeper on one aspect), note the overlap internally and skip duplicated content in the new README — only write what is new or additive.
+
+---
+
 ## Step 5 — Create the folder and write the notes file
 
 1. Create the new folder (use `Bash` with `mkdir -p`).
